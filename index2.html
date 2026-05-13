@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Reality Not Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="scanlines"></div>
+<div id="notificationBox" class="notification-box">+99 new alerts</div>
+
+<header class="topbar">
+  <p class="system-text left">ERROR</p>
+  <h1 class="glitch" data-text="404: Reality Not Found">404: Reality Not Found</h1>
+  <p class="system-text right">SEARCHING...</p>
+
+  <div class="nav-buttons">
+    <button onclick="showFeed()">FEED</button>
+    <button onclick="showNews()">NEWS</button>
+    <button onclick="showMessages()">MESSAGES</button>
+    <button onclick="showReflection()">REFLECTION</button>
+  </div>
+</header>
+
+<main id="feedSection" class="feed">
+  <div class="section-label">FEED</div>
+  <div id="feedPosts"></div>
+  <div class="loading-text">loading more...</div>
+</main>
+
+<main id="newsSection" class="news-section">
+  <div class="section-label news-title">NEWS</div>
+  <div class="ticker">
+    BREAKING • ALERT • PRICES RISING • POLITICAL CHAOS • MARKETS FALL • WAR FEARS • WEATHER WARNINGS • REFRESH • REFRESH • REFRESH
+  </div>
+  <div id="newsContainer" class="news-container"></div>
+</main>
+
+<main id="messagesSection" class="messages-section">
+  <div class="section-label">MESSAGES</div>
+
+  <div class="message-box">
+    <h2>Ask for advice.</h2>
+    <p class="message-subtitle">The system is listening.</p>
+
+    <input id="adviceInput" type="text" placeholder="Type your problem here...">
+    <button onclick="generateAdvice()">SEND</button>
+
+    <div id="adviceResponse" class="advice-response">
+      Your answer will appear here.
+    </div>
+  </div>
+</main>
+
+<main id="reflectionSection" class="reflection-section">
+  <div class="reflection-box">
+    <h1>Wait.</h1>
+
+    <p>You’ve been scrolling, clicking, reacting.</p>
+
+    <p>Social media is not all bad. It connects people, spreads ideas, shares art, creates opportunities, and lets people be heard.</p>
+
+    <p>But it also shapes what you see, how you feel, what you compare yourself to, and what you believe.</p>
+
+    <p class="highlight">The feed is not neutral.</p>
+
+    <p>It is designed to hold your attention. Sometimes with beauty. Sometimes with fear. Sometimes with desire.</p>
+
+    <p>With power comes responsibility — not just for platforms, but for users too.</p>
+
+    <p class="highlight">
+      What you click matters.<br>
+      What you believe matters.<br>
+      When you stop matters.
+    </p>
+
+    <button onclick="showFeed()">Go back</button>
+  </div>
+</main>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p id="popup-message"></p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<div id="adPopup" class="ad-popup">
+  <div class="ad-content">
+    <button class="ad-close" onclick="closeAd()">×</button>
+    <p class="sponsored">SPONSORED</p>
+    <h2 id="adTitle">Buy Confidence Now</h2>
+    <p id="adText">One product away from becoming yourself.</p>
+    <button class="ad-button">LEARN MORE</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
